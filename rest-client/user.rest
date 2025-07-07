@@ -1,0 +1,24 @@
+### 1. Login
+POST http://localhost:3000/user/login
+Content-Type: application/json
+
+{
+    "phoneNumber": "+9779876543210"
+}
+
+###
+
+### 2. Verify Phone
+POST http://localhost:3000/user/verifyPhone
+Content-Type: application/json
+validationToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI0ZjgxMGQ1MS0zOTYzLTQzYzEtYjBlZS1lY2MyMWMxZjBhNmUiLCJpYXQiOjE3NTE5MDI4NzMsImV4cCI6MTc1MTkwMjk5M30.78FLujtJ2oUHaqJzQviEpSdZMATPRVhM9ULAPi3_bkA
+
+{
+    "otp": "12345"
+}
+
+###
+
+### 3. Get Profile (Me)
+GET http://localhost:3000/user/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI0ZjgxMGQ1MS0zOTYzLTQzYzEtYjBlZS1lY2MyMWMxZjBhNmUiLCJwaG9uZU51bWJlciI6Iis5Nzc5ODc2NTQzMjEwIiwicm9sZSI6IlVzZXIiLCJpYXQiOjE3NTE5MDI4ODcsImV4cCI6MTc1MTkwMzc4N30.Vl7ZCpNrzBPg3oHrn_WN9aeUfuAhHoxAslE7Uz5V87s
