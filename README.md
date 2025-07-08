@@ -30,13 +30,7 @@ cd nestjs-auth-app
 npm install
 ```
 
-3. Set up the database with Prisma:
-
-```bash
-npx prisma migrate dev
-```
-
-4. Configure environment variables by creating a `.env` file:
+3. Configure environment variables by creating a `.env` file:
 
 ```env
 DATABASE_URL="file:./dev.db"
@@ -51,6 +45,17 @@ JWT_REFRESH_EXPIRATION=7d
 
 PORT=3000
 ```
+
+
+4. Generate prisma client:
+
+```bash
+npx prisma migrate dev
+```
+
+5. Install REST Client (optional) <br>
+   If you're using VSCode then install extension named **REST Client** by _Huachao Mao_ ,  then use `rest-client\user.rest` file to check api endpoint
+
 
 ## Usage
 
