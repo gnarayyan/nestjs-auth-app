@@ -50,7 +50,7 @@ PORT=3000
 4. Generate prisma client:
 
 ```bash
-npx prisma migrate dev
+npx prisma generate
 ```
 
 5. Install REST Client (optional) <br>
